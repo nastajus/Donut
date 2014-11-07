@@ -5,7 +5,7 @@
 
 public class Protein extends Nutrient {
 
-    public Protein (int grams){
+    public Protein (double grams){
         super(grams);
     }
 }

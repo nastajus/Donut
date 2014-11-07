@@ -3,8 +3,8 @@
  */
 public abstract class Nutrient {
 
-    int grams;
-    Nutrient(int grams){
+    double grams;
+    Nutrient(double grams){
         this.grams = grams;
     }
 
