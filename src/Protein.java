@@ -7,7 +7,9 @@
 // which doesn't exactly make sense to me.
 
 public class Protein {
-    Protein(){
+    int grams;
+    Protein(int grams){
+        this.grams = grams;
         System.out.println ("Created"); //doesn't execute
     }
 }
