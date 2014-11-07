@@ -1,8 +1,12 @@
 /**
  * Created by IAN on 07/11/14.
  */
-public class Protein  {
-    int grams;
+// extends NutrientEnum fails
+// because "cannot inherit from final NutrientEnum"
+// i'm wondering if that pertains to a comment of multiple inheritance not being allowed for Enums...
+// which doesn't exactly make sense to me.
+
+public class Protein {
     Protein(){
         System.out.println ("Created"); //doesn't execute
     }

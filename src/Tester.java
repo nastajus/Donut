@@ -5,7 +5,14 @@ public class Tester {
     public static void main(String[] args){
 
         NutrientEnum n = NutrientEnum.PROTEIN;
-        System.out.println (n);  //n.grams doesn't exist
+        System.out.println (n);
+        //when grams was inside class Protein, n.grams didn't exist.
+        //now bc grams is inside class NutrientEnum, n.grams does.
+
+      //n.grams;    //valid autocomplete but invalid by itself.
+        n.get();    //valid
+        System.out.println( n.grams );
+        System.out.println( n.get() );
 
 
         //trying to learn from oracle docs now
