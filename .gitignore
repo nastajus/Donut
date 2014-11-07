@@ -1,3 +1,5 @@
+# Java
+
 *.class
 
 # Mobile Tools for Java (J2ME)
@@ -11,6 +13,13 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+
 # =========================
 # Operating System Files
 # =========================
@@ -23,8 +32,7 @@ hs_err_pid*
 .LSOverride
 
 # Icon must end with two \r
-Icon
-
+Icon
 # Thumbnails
 ._*
 
