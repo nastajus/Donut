@@ -3,7 +3,7 @@
  */
 public class Organic extends Nutrient {
     int cal; //small cal
-    Organic(double grams){
+    Organic(int grams){
         super(1000 * grams);
     }
 }
