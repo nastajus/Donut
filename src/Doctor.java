@@ -8,17 +8,12 @@ public final class Doctor implements DietActions {
     private Doctor(){};     //final class + private constructor in Java ~== static class C#
 
     @Override
-    public void CountCalories(ArrayList<Food> foods) {
+    public void CountCalories(ArrayList<FoodEaten> foodEaten) {
 
     }
 
     @Override
-    public void AssessNutrition(ArrayList<Food> foods) {
-
-    }
-
-    @Override
-    public void BuildRNI() {
+    public void AssessNutrition(ArrayList<FoodEaten> foodEaten) {
 
     }
 
