@@ -3,56 +3,84 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="149.0" y="235.0">Food</node>
-    <node x="52.75" y="0.0">Nutrient</node>
-    <node x="0.0" y="235.0">DietActions</node>
-    <node x="110.5" y="80.0">Mineral</node>
-    <node x="242.0" y="0.0">KnowledgeActions</node>
-    <node x="0.0" y="390.0">Meal</node>
-    <node x="145.0" y="315.0">Donut</node>
-    <node x="0.0" y="80.0">Organic</node>
-    <node x="261.0" y="235.0">Tester</node>
-    <node x="97.0" y="160.0">Magnesium</node>
-    <node x="12.5" y="315.0">Doctor</node>
-    <node x="2.0" y="160.0">Protein</node>
-    <node x="263.0" y="80.0">Researcher</node>
+    <node x="176.0" y="160.0">Calcium</node>
+    <node x="44.25" y="235.0">Food</node>
+    <node x="200.0" y="235.0">DietActions</node>
+    <node x="84.0" y="315.0">Donut</node>
+    <node x="0.0" y="160.0">Protein</node>
+    <node x="345.0" y="235.0">Researcher</node>
+    <node x="212.5" y="315.0">Doctor</node>
+    <node x="143.85416666666669" y="0.0">Nutrient</node>
+    <node x="267.0" y="80.0">Mineral</node>
+    <node x="0.0" y="390.0">FoodEaten</node>
+    <node x="0.0" y="315.0">Bagel</node>
+    <node x="258.0" y="390.0">Meal</node>
+    <node x="37.619791666666686" y="80.0">Organic</node>
+    <node x="143.0" y="390.0">Tester</node>
+    <node x="352.0" y="160.0">Magnesium</node>
+    <node x="95.0" y="160.0">Fiber</node>
+    <node x="275.0" y="160.0">Iron</node>
   </nodes>
   <notes />
   <edges>
+    <edge source="Bagel" target="Food">
+      <point x="0.0" y="-15.0" />
+      <point x="32.0" y="290.0" />
+      <point x="60.0" y="290.0" />
+      <point x="-15.75" y="15.0" />
+    </edge>
     <edge source="Magnesium" target="Mineral">
       <point x="0.0" y="-15.0" />
-      <point x="0.0" y="15.0" />
+      <point x="402.0" y="135.0" />
+      <point x="327.8333333333333" y="135.0" />
+      <point x="24.333333333333314" y="15.0" />
     </edge>
     <edge source="Donut" target="Food">
       <point x="0.0" y="-15.0" />
+      <point x="119.5" y="290.0" />
+      <point x="91.5" y="290.0" />
+      <point x="15.75" y="15.0" />
+    </edge>
+    <edge source="Iron" target="Mineral">
+      <point x="0.0" y="-15.0" />
       <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Fiber" target="Organic">
+      <point x="0.0" y="-15.0" />
+      <point x="125.5" y="135.0" />
+      <point x="96.86979166666669" y="135.0" />
+      <point x="19.75" y="15.0" />
     </edge>
     <edge source="Organic" target="Nutrient">
       <point x="0.0" y="-15.0" />
-      <point x="39.5" y="55.0" />
-      <point x="73.0" y="55.0" />
+      <point x="77.11979166666669" y="55.0" />
+      <point x="164.10416666666669" y="55.0" />
       <point x="-20.25" y="15.0" />
+    </edge>
+    <edge source="Calcium" target="Mineral">
+      <point x="0.0" y="-15.0" />
+      <point x="215.5" y="135.0" />
+      <point x="279.1666666666667" y="135.0" />
+      <point x="-24.333333333333314" y="15.0" />
     </edge>
     <edge source="Mineral" target="Nutrient">
       <point x="0.0" y="-15.0" />
-      <point x="147.0" y="55.0" />
-      <point x="113.5" y="55.0" />
+      <point x="303.5" y="55.0" />
+      <point x="204.60416666666669" y="55.0" />
       <point x="20.25" y="15.0" />
     </edge>
     <edge source="Doctor" target="DietActions">
       <point x="0.0" y="-15.0" />
       <point x="0.0" y="15.0" />
     </edge>
-    <edge source="Researcher" target="KnowledgeActions">
-      <point x="0.0" y="-15.0" />
-      <point x="0.0" y="15.0" />
-    </edge>
     <edge source="Protein" target="Organic">
       <point x="0.0" y="-15.0" />
-      <point x="0.0" y="15.0" />
+      <point x="37.5" y="135.0" />
+      <point x="57.369791666666686" y="135.0" />
+      <point x="-19.75" y="15.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0576271186440678" x="289.689811663263" y="219.2672027456319" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="366.0" y="349.0" />
   <SelectedNodes />
   <Categories />
   <SCOPE>All</SCOPE>
