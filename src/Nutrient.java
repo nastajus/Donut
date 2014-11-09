@@ -3,9 +3,16 @@
  */
 public abstract class Nutrient {
 
-    double grams;
-    Nutrient(double grams){
-        this.grams = grams;
+    static final double OZ_TO_GRAMS = 28.4;
+
+    double milligrams;
+
+    Nutrient(){
+        this.milligrams = 0;
+    }
+
+    Nutrient(double milligrams){
+        this.milligrams = milligrams;
     }
 
 }
