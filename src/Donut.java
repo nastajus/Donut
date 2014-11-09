@@ -1,15 +1,6 @@
 /**
  * Created by IAN on 08/11/14.
  */
-public class Donut implements FoodActions {
+public class Donut extends Food {
 
-    //@Override
-    public void Eat() {
-
-    }
-
-    //@Override
-    public void CountCalories() {
-        ;
-    }
 }
