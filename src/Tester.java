@@ -4,7 +4,7 @@ import java.security.cert.CertPathValidatorException;
  * Created by IAN on 07/11/14.
  */
 public class Tester {
-    public static void main(String[] args){
+    public static void main(String[] args) throws ClassNotFoundException {
 
         Protein p = new Protein(4);
         System.out.println(p.milligrams);   //TODO: abstract weights to p.size() or something.
@@ -13,15 +13,15 @@ public class Tester {
         System.out.println(mmm.milligrams);
 
         //move to Researcher potentially
-        Researcher.dailyValues.add(new Calcium(1100));
-        Researcher.dailyValues.add(new Iron(14));
-        Researcher.dailyValues.add(new Fiber(25));
-        Researcher.dailyValues.add(new Protein(4));
+        Researcher.dvAdd(new Calcium(1100));
+        Researcher.dvAdd(new Iron(14));
+        Researcher.dvAdd(new Fiber(25));
+        Researcher.dvAdd(new Protein(4));
 
         //donutChocDip
         Donut d = new Donut();
-        double grams = Researcher.getGrams(new Calcium(2)); 
-        //d.nutrients.add(new Calcium( ))
+        double grams = Researcher.getGrams(new Calcium(2));
+        System.out.println(grams);
         d.nutrients.add(p);
 
 

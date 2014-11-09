@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by IAN on 09/11/14.
@@ -8,10 +8,14 @@ public final class Researcher {
 
     private Researcher(){}
 
-    static List<Nutrient> dailyValues = new ArrayList<Nutrient>();
-    //http://stackoverflow.com/questions/322715/when-to-use-linkedlist-over-arraylist
+    static Map<String, Double> dailyValues = new HashMap<String, Double>();
 
-
+    //i tried exploring using NutrientEnum as a more restrictive way to limit input, but i abandoned.
+    static void dvAdd(Nutrient nutrient){
+        String key = nutrient.getClass().getSimpleName();
+        Double value = nutrient.milligrams;
+        dailyValues.put(key,value);
+    }
 
 
     public boolean BuildRNI() {
@@ -23,23 +27,9 @@ public final class Researcher {
     }
 
     //converts daily value of input compareNutrient vs. stored list of daily values
-    public static double getGrams(Nutrient compareNutrient) throws ClassNotFoundException { //for DV //i'm conflicted between concise name vs. naming w/ DV.
-
-        String s = compareNutrient.getClass().getSimpleName();
-        try {
-            Nutrient n = (Nutrient)Class.forName(s).newInstance();
-            if ( dailyValues.contains(n) ){
-                int i = dailyValues.indexOf(n);
-                double value = dailyValues.get(i).milligrams;
-                return value / 100 * compareNutrient.milligrams;
-            }
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        }
-        return 0;
+    public static double getGrams(Nutrient compareNutrient) { //for DV //i'm conflicted between concise name vs. naming w/ DV.
+        String DVnutrient = compareNutrient.getClass().getSimpleName();
+        return dailyValues.get(DVnutrient) / 100 * compareNutrient.milligrams;
     }
-
 
 }
