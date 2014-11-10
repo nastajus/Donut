@@ -8,6 +8,20 @@ public abstract class Food { // a discrete food item, orderable in a restaurant
     int kcal;
     ArrayList<Nutrient> nutrients = new ArrayList<Nutrient>();
 
+    Food(){}
+
+    Food(int kcal){
+        if (kcal < 0){
+            throw new IllegalStateException("Negative Calories not permitted");
+        }
+        else {
+            this.kcal = kcal;
+        }
+    }
+
+    abstract void Cook(); //changes kcal to something else
+    //can use a boolean isCooked, or have a gradient measuring amount cooked it is. A formula perhaps.
+
 
     //some nutritional menus only provide Sugar, others will list Carbs.  All sugars are carbs, but not all carbs are sugar.
     //a feature I want is the ability to add various types of Sugar

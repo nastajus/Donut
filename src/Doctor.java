@@ -7,6 +7,8 @@ public final class Doctor implements DietActions {
 
     private Doctor(){};     //final class + private constructor in Java ~== static class C#
 
+    //ideas: ratio of successfully treated patients, salary
+
     @Override
     public void CountCalories(ArrayList<FoodEaten> foodEaten) {
 

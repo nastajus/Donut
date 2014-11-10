@@ -3,7 +3,7 @@ import java.security.cert.CertPathValidatorException;
 /**
  * Created by IAN on 07/11/14.
  */
-public class Tester {
+public class Tester{
     public static void main(String[] args) throws ClassNotFoundException {
 
         Protein p = new Protein(4);
@@ -24,6 +24,8 @@ public class Tester {
         System.out.println(grams);
         d.nutrients.add(p);
 
+        System.out.println( p.getName() );
+        //Researcher.dailyValues.get();
 
 
         /*Serving Size
@@ -48,4 +50,5 @@ Calories (kcal)
 
 
     }
+
 }
