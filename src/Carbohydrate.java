@@ -6,4 +6,11 @@ public class Carbohydrate extends Organic {
         super(grams);
         kcal = 4;
     }
+    @Override
+    public void Cook(){
+        if (!isCooked){
+            isCooked = true;
+            this.milligrams *= .5;
+        }
+    }
 }

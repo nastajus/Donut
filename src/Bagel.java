@@ -3,7 +3,7 @@
  */
 public class Bagel extends Food {
     @Override
-    void Cook() {
+    public void Cook() {
 
     }
 }

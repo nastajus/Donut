@@ -3,10 +3,13 @@ import java.util.ArrayList;
 /**
  * Created by IAN on 09/11/14.
  */
-public abstract class Food { // a discrete food item, orderable in a restaurant
+public abstract class Food implements Cookable { // a discrete food item, orderable in a restaurant
     double cost; //optional to logic
     int kcal;
     ArrayList<Nutrient> nutrients = new ArrayList<Nutrient>();
+
+    boolean isCooked = false;
+
 
     Food(){}
 
@@ -19,10 +22,6 @@ public abstract class Food { // a discrete food item, orderable in a restaurant
         }
     }
 
-    abstract void Cook(); //changes kcal to something else
-    //can use a boolean isCooked, or have a gradient measuring amount cooked it is. A formula perhaps.
-    //Now, some nutrients are more affected by cooking than others. Calcium is pretty sturdy, for example, while vitamin C,
-    //folate, and potassium are quite fragile. Different cooking methods also affect various nutrients differently.
 
     void Add(Nutrient nutrient){
         if ( !nutrients.contains(nutrient) ){
@@ -31,6 +30,18 @@ public abstract class Food { // a discrete food item, orderable in a restaurant
     }
     //some nutritional menus only provide Sugar, others will list Carbs.  All sugars are carbs, but not all carbs are sugar.
     //a feature I want is the ability to add various types of Sugar
+
+    @Override
+    public void Cook(){
+        if (!isCooked){
+            isCooked = true;
+            for(Nutrient nutrient : nutrients){
+                System.out.print( nutrient.getName() + ":" + nutrient.milligrams );
+                nutrient.Cook();
+                System.out.println( ":" + nutrient.milligrams );
+            }
+        }
+    }
 
 
 

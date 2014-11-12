@@ -7,4 +7,9 @@ public class Vitamin extends Nutrient {
     Vitamin(double milligrams){
         this.milligrams = milligrams;
     }
+
+    @Override
+    public void Cook() {
+
+    }
 }

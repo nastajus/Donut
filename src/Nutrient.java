@@ -1,11 +1,13 @@
 /**
  * Created by IAN on 07/11/14.
  */
-public abstract class Nutrient implements Sameable<Nutrient> {
+public abstract class Nutrient implements Sameable<Nutrient>, Cookable {
 
     static final double OZ_TO_GRAMS = 28.4;
 
     double milligrams;  //BigDecimal
+
+    boolean isCooked = false;
 
     Nutrient(){
         this.milligrams = 0;
@@ -24,5 +26,6 @@ public abstract class Nutrient implements Sameable<Nutrient> {
         if(this.getName().equals(nutrient.getName())) return true;
         else return false;
     }
+
 
 }

@@ -6,4 +6,9 @@ public class Organic extends Nutrient {
     Organic(int grams){
         super(grams);
     }
+
+    @Override
+    public void Cook() {
+
+    }
 }

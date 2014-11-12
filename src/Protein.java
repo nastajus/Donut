@@ -7,4 +7,13 @@ public class Protein extends Organic {
         kcal = 4;
     }
     //get//set
+    @Override
+    public void Cook(){
+        if (!isCooked){
+            isCooked = true;
+            this.milligrams *= .5;
+        }
+    }
+
+
 }

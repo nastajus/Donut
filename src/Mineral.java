@@ -6,4 +6,9 @@ public class Mineral extends Nutrient { //dietary minerals
     Mineral(double milligrams){
         super(milligrams);
     }
+
+    @Override
+    public void Cook() {
+
+    }
 }

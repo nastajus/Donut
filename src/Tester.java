@@ -27,10 +27,11 @@ public class Tester{
         d.Add(new Iron(  Researcher.dvGetGrams( new Calcium(2) )));
 
         System.out.println(p.getName());
-        //Researcher.dailyValues.get();
         for (Nutrient nutrient : d.nutrients){
-            System.out.println ( nutrient.getName() + " : " + nutrient.milligrams );
+            System.out.println(nutrient.getName() + " : " + nutrient.milligrams);
         }
+         d.Cook();
+
 
 
         /*Serving Size

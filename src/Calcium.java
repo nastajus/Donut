@@ -5,4 +5,11 @@ public class Calcium extends Mineral {
     Calcium(double mg){
         super(mg);
     }
+    @Override
+    public void Cook(){
+        if (!isCooked){
+            isCooked = true;
+            this.milligrams *= .9;
+        }
+    }
 }
