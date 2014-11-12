@@ -27,7 +27,7 @@ public final class Researcher {
     }
 
     //converts daily value of input compareNutrient vs. stored list of daily values
-    public static double getGrams(Nutrient compareNutrient) { //for DV //i'm conflicted between concise name vs. naming w/ DV.
+    public static double dvGetGrams(Nutrient compareNutrient) { //for DV //i'm conflicted between concise name vs. naming w/ DV.
         String DVnutrient = compareNutrient.getClass().getSimpleName();
         return dailyValues.get(DVnutrient) / 100 * compareNutrient.milligrams;
     }

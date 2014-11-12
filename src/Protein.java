@@ -4,7 +4,7 @@
 public class Protein extends Organic {
     public Protein (int grams){
         super(grams);
-        cal = 4;
+        kcal = 4;
     }
     //get//set
 }

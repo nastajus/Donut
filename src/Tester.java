@@ -1,5 +1,3 @@
-import java.security.cert.CertPathValidatorException;
-
 /**
  * Created by IAN on 07/11/14.
  */
@@ -18,14 +16,21 @@ public class Tester{
         Researcher.dvAdd(new Fiber(25));
         Researcher.dvAdd(new Protein(4));
 
+        double grams = Researcher.dvGetGrams(new Calcium(1100));
+        System.out.println(grams);
+
         //donutChocDip
         Donut d = new Donut();
-        double grams = Researcher.getGrams(new Calcium(2));
-        System.out.println(grams);
-        d.nutrients.add(p);
+        d.Add(new Carbohydrate(31));
+        d.Add(new Protein(4));
+        d.Add(new Iron(  Researcher.dvGetGrams( new Iron(10) )));
+        d.Add(new Iron(  Researcher.dvGetGrams( new Calcium(2) )));
 
-        System.out.println( p.getName() );
+        System.out.println(p.getName());
         //Researcher.dailyValues.get();
+        for (Nutrient nutrient : d.nutrients){
+            System.out.println ( nutrient.getName() + " : " + nutrient.milligrams );
+        }
 
 
         /*Serving Size

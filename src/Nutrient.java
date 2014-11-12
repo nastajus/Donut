@@ -5,14 +5,14 @@ public abstract class Nutrient implements Sameable<Nutrient> {
 
     static final double OZ_TO_GRAMS = 28.4;
 
-    double milligrams;
+    double milligrams;  //BigDecimal
 
     Nutrient(){
         this.milligrams = 0;
     }
 
     Nutrient(double milligrams){
-        this.milligrams = milligrams;
+        this.milligrams = Math.floor( milligrams * 100 / 100);
     }
 
     public String getName(){
