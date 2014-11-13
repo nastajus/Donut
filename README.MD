@@ -8,9 +8,12 @@ Another goal is to demonstrate mastery of Java object-oriented concepts, includi
 #### Status
 In progress. Majority of initial commits were just me making notes as i explored implementation details. The real implementation is beginning to be formed, it's barely an interface at the moment.
 
+Current:
+![readme image][3]
 
+Simpler:
 ![readme image][1]
-![readme image][2]
 
   [1]: https://raw.githubusercontent.com/nastajus/Donut/master/diagram.png
   [2]: https://raw.githubusercontent.com/nastajus/Donut/master/diagram2.png
+  [3]: https://raw.githubusercontent.com/nastajus/Donut/master/diagram3.png
