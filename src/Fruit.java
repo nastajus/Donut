@@ -3,6 +3,8 @@
  */
 abstract class Fruit extends Food implements Growable {
 
+    boolean isGrown = false;
+
     @Override
     public void Grow() {
         if (!isGrown){

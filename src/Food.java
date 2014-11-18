@@ -11,7 +11,6 @@ public abstract class Food implements Cookable { // a discrete food item, ordera
     ArrayList<Nutrient> nutrients = new ArrayList<Nutrient>();
 
     boolean isCooked = false;
-    boolean isGrown = false;
 
 
     Food(){}
