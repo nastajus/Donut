@@ -36,19 +36,35 @@ public class Tester{
         d.Cook();
 
 
-        ArrayList<Nutrient> nutrients = new ArrayList<Nutrient>() {
-            { new Water(90); }
-            { new Potassium(100); }
-            { new Carbohydrate(8); }
-            { new Fiber((int)0.9); }
-            { new Protein((int)0.8); }
-//            { new Vitamin_A( Researcher.dvGetGrams( new Vitamin_A(67) ) ); }
-//            { new Vitamin_C( Researcher.dvGetGrams( new Vitamin_C(61) ) ); }
-            { new Calcium( 0 ); }
-//            { new Iron( Researcher.dvGetGrams( new Iron(1) ) ); }
-        };
-        Cantaloupe c = new Cantaloupe( 100,  nutrients );
-        c.Grow();
+        ArrayList<Nutrient> nutrients = new ArrayList<Nutrient>() {{
+             new Water(90);
+             new Potassium(100);
+//            { new Carbohydrate(8); }
+//            { new Fiber((int)0.9); }
+//            { new Protein((int)0.8); }
+////            { new Vitamin_A( Researcher.dvGetGrams( new Vitamin_A(67) ) ); }
+////            { new Vitamin_C( Researcher.dvGetGrams( new Vitamin_C(61) ) ); }
+//            { new Calcium( 0 ); }
+////            { new Iron( Researcher.dvGetGrams( new Iron(1) ) ); }
+        }};
+        Cantaloupe cantaloupe = new Cantaloupe( 100,  nutrients );
+        cantaloupe.Grow();
+
+        for (Nutrient nutrient : cantaloupe.nutrients ){
+            System.out.println("PRINTING: " + nutrient);
+        }
+
+
+        ArrayList<String> blah = new ArrayList<String>(){{add("asdfa");add("bbb");}};
+        for(String bla : blah){
+            System.out.println(bla);
+        }
+
+        ArrayList<Nutrient> bloh = new ArrayList<Nutrient>(){{add( new Water(90) );add( new Potassium(100) );}};
+        for(Nutrient blo : bloh){
+            System.out.println(blo.getName());
+        }
+
 
 
         Cherry cherry = new Cherry( 100, new ArrayList<Nutrient>() {
