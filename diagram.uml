@@ -3,127 +3,112 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="13.25" y="240.0">Calcium</node>
-    <node x="47.75" y="80.0">Food</node>
-    <node x="648.25" y="240.0">Folate</node>
-    <node x="57.25" y="0.0">Cookable</node>
-    <node x="0.0" y="315.0">DietActions</node>
-    <node x="557.0" y="0.0">Sameable</node>
-    <node x="0.0" y="160.0">Donut</node>
-    <node x="817.25" y="240.0">Carbohydrate</node>
-    <node x="954.25" y="240.0">Protein</node>
-    <node x="12.5" y="395.0">Doctor</node>
-    <node x="545.9320175438596" y="160.0">Vitamin</node>
-    <node x="309.25" y="240.0">Potassium</node>
-    <node x="541.25" y="80.0">Nutrient</node>
-    <node x="175.0" y="160.0">Mineral</node>
-    <node x="91.0" y="160.0">Bagel</node>
-    <node x="423.25" y="240.0">Vitamin_A</node>
-    <node x="535.25" y="240.0">Vitamin_C</node>
-    <node x="847.8092105263158" y="160.0">Organic</node>
-    <node x="112.25" y="240.0">Magnesium</node>
-    <node x="736.25" y="240.0">Fiber</node>
-    <node x="232.24999999999997" y="240.0">Iron</node>
+    <node x="1128.0" y="240.0">Calcium</node>
+    <node x="182.92534722222217" y="80.0">Food</node>
+    <node x="817.6063122923589" y="310.35714285714283">Sprayable</node>
+    <node x="730.0" y="240.0">Folate</node>
+    <node x="68.5" y="315.0">AbstractFactory</node>
+    <node x="192.42534722222217" y="0.0">Cookable</node>
+    <node x="310.0" y="240.0">Water</node>
+    <node x="739.25" y="0.0">Sameable</node>
+    <node x="303.0" y="315.0">DietActions</node>
+    <node x="266.4253472222222" y="160.0">Donut</node>
+    <node x="60.78993055555554" y="160.0">Fruit</node>
+    <node x="400.0" y="240.0">Carbohydrate</node>
+    <node x="215.0" y="240.0">Protein</node>
+    <node x="315.5" y="395.0">Doctor</node>
+    <node x="723.34375" y="160.0">Vitamin</node>
+    <node x="954.6063122923589" y="310.35714285714283">Solubility</node>
+    <node x="148.0" y="395.0">FoodFactory</node>
+    <node x="1227.0" y="240.0">Potassium</node>
+    <node x="723.5" y="80.0">Nutrient</node>
+    <node x="560.6063122923589" y="310.35714285714283">AbstractFactoryPatternDemo</node>
+    <node x="1076.25" y="160.0">Mineral</node>
+    <node x="121.0" y="240.0">Cherry</node>
+    <node x="0.0" y="240.0">Cantaloupe</node>
+    <node x="182.42534722222217" y="160.0">Bagel</node>
+    <node x="560.6063122923589" y="385.35714285714283">Meal</node>
+    <node x="618.0" y="240.0">Vitamin_A</node>
+    <node x="0.0" y="395.0">NutrientFactory</node>
+    <node x="818.0" y="240.0">Vitamin_C</node>
+    <node x="362.25" y="160.0">Organic</node>
+    <node x="31.539930555555543" y="80.0">Growable</node>
+    <node x="1008.0" y="240.0">Magnesium</node>
+    <node x="1084.6063122923588" y="310.35714285714283">Tester</node>
+    <node x="931.0" y="240.0">Iron</node>
+    <node x="537.0" y="240.0">Fiber</node>
   </nodes>
   <notes />
   <edges>
+    <edge source="Potassium" target="Mineral">
+      <point x="0.0" y="-15.0" />
+      <point x="1274.0" y="210.0" />
+      <point x="1140.125" y="210.0" />
+      <point x="27.375" y="15.0" />
+    </edge>
     <edge source="Food" target="Cookable">
       <point x="0.0" y="-15.0" />
       <point x="-22.0" y="15.0" />
     </edge>
-    <edge source="Potassium" target="Mineral">
-      <point x="0.0" y="-15.0" />
-      <point x="356.25" y="210.0" />
-      <point x="238.875" y="210.0" />
-      <point x="27.375" y="15.0" />
-    </edge>
-    <edge source="Vitamin" target="Nutrient">
-      <point x="0.0" y="-15.0" />
-      <point x="583.9320175438596" y="135.0" />
-      <point x="581.75" y="135.0" />
-      <point x="0.0" y="15.0" />
-    </edge>
     <edge source="Calcium" target="Mineral">
       <point x="0.0" y="-15.0" />
-      <point x="52.75" y="210.0" />
-      <point x="184.125" y="210.0" />
-      <point x="-27.375" y="15.0" />
-    </edge>
-    <edge source="Mineral" target="Nutrient">
-      <point x="0.0" y="-15.0" />
-      <point x="211.5" y="135.0" />
-      <point x="554.75" y="135.0" />
-      <point x="-27.0" y="15.0" />
+      <point x="1167.5" y="220.0" />
+      <point x="1121.875" y="220.0" />
+      <point x="9.125" y="15.0" />
     </edge>
     <edge source="Doctor" target="DietActions">
       <point x="0.0" y="-15.0" />
       <point x="0.0" y="15.0" />
     </edge>
+    <edge source="NutrientFactory" target="AbstractFactory">
+      <point x="0.0" y="-15.0" />
+      <point x="64.0" y="370.0" />
+      <point x="101.0" y="370.0" />
+      <point x="-32.5" y="15.0" />
+    </edge>
     <edge source="Protein" target="Organic">
       <point x="0.0" y="-15.0" />
-      <point x="991.75" y="220.0" />
-      <point x="913.6425438596491" y="220.0" />
-      <point x="26.33333333333337" y="15.0" />
+      <point x="252.5" y="210.0" />
+      <point x="372.125" y="210.0" />
+      <point x="-29.625" y="15.0" />
     </edge>
     <edge source="Bagel" target="Food">
       <point x="0.0" y="-15.0" />
-      <point x="123.0" y="135.0" />
-      <point x="95.0" y="135.0" />
-      <point x="15.75" y="15.0" />
+      <point x="0.0" y="15.0" />
     </edge>
-    <edge source="Magnesium" target="Mineral">
-      <point x="0.0" y="-15.0" />
-      <point x="162.25" y="220.0" />
-      <point x="202.375" y="220.0" />
-      <point x="-9.125" y="15.0" />
-    </edge>
-    <edge source="Donut" target="Food">
-      <point x="0.0" y="-15.0" />
-      <point x="35.5" y="135.0" />
-      <point x="63.5" y="135.0" />
-      <point x="-15.75" y="15.0" />
+    <edge source="Fruit" target="Food">
+      <point x="14.75" y="-15.0" />
+      <point x="105.03993055555554" y="135.0" />
+      <point x="193.42534722222217" y="135.0" />
+      <point x="-21.0" y="15.0" />
     </edge>
     <edge source="Iron" target="Mineral">
       <point x="0.0" y="-15.0" />
-      <point x="260.75" y="220.0" />
-      <point x="220.625" y="220.0" />
-      <point x="9.125" y="15.0" />
+      <point x="959.5" y="210.0" />
+      <point x="1085.375" y="210.0" />
+      <point x="-27.375" y="15.0" />
     </edge>
-    <edge source="Fiber" target="Organic">
+    <edge source="Water" target="Organic">
       <point x="0.0" y="-15.0" />
-      <point x="766.75" y="220.0" />
-      <point x="860.9758771929824" y="220.0" />
-      <point x="-26.33333333333337" y="15.0" />
+      <point x="345.0" y="220.0" />
+      <point x="391.875" y="220.0" />
+      <point x="-9.875" y="15.0" />
     </edge>
     <edge source="Organic" target="Nutrient">
       <point x="0.0" y="-15.0" />
-      <point x="887.3092105263158" y="135.0" />
-      <point x="608.75" y="135.0" />
-      <point x="27.0" y="15.0" />
-    </edge>
-    <edge source="Vitamin_C" target="Vitamin">
-      <point x="0.0" y="-15.0" />
-      <point x="581.75" y="220.0" />
-      <point x="583.9320175438596" y="220.0" />
-      <point x="0.0" y="15.0" />
-    </edge>
-    <edge source="Carbohydrate" target="Organic">
-      <point x="0.0" y="-15.0" />
-      <point x="875.75" y="220.0" />
-      <point x="887.3092105263158" y="220.0" />
-      <point x="0.0" y="15.0" />
+      <point x="401.75" y="135.0" />
+      <point x="737.0" y="135.0" />
+      <point x="-27.0" y="15.0" />
     </edge>
     <edge source="Nutrient" target="Cookable">
       <point x="-20.25" y="-15.0" />
-      <point x="561.5" y="55.0" />
-      <point x="123.25" y="55.0" />
+      <point x="743.75" y="55.0" />
+      <point x="258.4253472222222" y="55.0" />
       <point x="22.0" y="15.0" />
     </edge>
-    <edge source="Vitamin_A" target="Vitamin">
-      <point x="0.0" y="-15.0" />
-      <point x="469.25" y="220.0" />
-      <point x="558.5986842105262" y="220.0" />
-      <point x="-25.33333333333337" y="15.0" />
+    <edge source="Fruit" target="Growable">
+      <point x="-14.75" y="-15.0" />
+      <point x="0.0" y="15.0" />
     </edge>
     <edge source="Nutrient" target="Sameable">
       <point x="20.25" y="-15.0" />
@@ -131,12 +116,78 @@
     </edge>
     <edge source="Folate" target="Vitamin">
       <point x="0.0" y="-15.0" />
-      <point x="682.25" y="220.0" />
-      <point x="609.265350877193" y="220.0" />
+      <point x="764.0" y="220.0" />
+      <point x="761.34375" y="220.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Cherry" target="Fruit">
+      <point x="0.0" y="-15.0" />
+      <point x="158.0" y="220.0" />
+      <point x="105.03993055555554" y="220.0" />
+      <point x="14.75" y="15.0" />
+    </edge>
+    <edge source="Cantaloupe" target="Fruit">
+      <point x="0.0" y="-15.0" />
+      <point x="50.5" y="220.0" />
+      <point x="75.53993055555554" y="220.0" />
+      <point x="-14.75" y="15.0" />
+    </edge>
+    <edge source="Vitamin" target="Nutrient">
+      <point x="0.0" y="-15.0" />
+      <point x="761.34375" y="135.0" />
+      <point x="764.0" y="135.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Mineral" target="Nutrient">
+      <point x="0.0" y="-15.0" />
+      <point x="1112.75" y="135.0" />
+      <point x="791.0" y="135.0" />
+      <point x="27.0" y="15.0" />
+    </edge>
+    <edge source="FoodFactory" target="AbstractFactory">
+      <point x="0.0" y="-15.0" />
+      <point x="203.0" y="370.0" />
+      <point x="166.0" y="370.0" />
+      <point x="32.5" y="15.0" />
+    </edge>
+    <edge source="Magnesium" target="Mineral">
+      <point x="0.0" y="-15.0" />
+      <point x="1058.0" y="220.0" />
+      <point x="1103.625" y="220.0" />
+      <point x="-9.125" y="15.0" />
+    </edge>
+    <edge source="Donut" target="Food">
+      <point x="0.0" y="-15.0" />
+      <point x="301.9253472222222" y="135.0" />
+      <point x="235.42534722222217" y="135.0" />
+      <point x="21.0" y="15.0" />
+    </edge>
+    <edge source="Vitamin_C" target="Vitamin">
+      <point x="0.0" y="-15.0" />
+      <point x="864.5" y="220.0" />
+      <point x="786.6770833333334" y="220.0" />
       <point x="25.33333333333337" y="15.0" />
     </edge>
+    <edge source="Carbohydrate" target="Organic">
+      <point x="0.0" y="-15.0" />
+      <point x="458.5" y="220.0" />
+      <point x="411.625" y="220.0" />
+      <point x="9.875" y="15.0" />
+    </edge>
+    <edge source="Fiber" target="Organic">
+      <point x="0.0" y="-15.0" />
+      <point x="567.5" y="210.0" />
+      <point x="431.375" y="210.0" />
+      <point x="29.625" y="15.0" />
+    </edge>
+    <edge source="Vitamin_A" target="Vitamin">
+      <point x="0.0" y="-15.0" />
+      <point x="664.0" y="220.0" />
+      <point x="736.0104166666666" y="220.0" />
+      <point x="-25.33333333333337" y="15.0" />
+    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.9516778523489933" x="512.5888575458392" y="220.03173483779972" />
+  <settings layout="Hierarchic Group" zoom="0.8080536912751678" x="660.7400332225914" y="387.71179401993356" />
   <SelectedNodes />
   <Categories />
   <SCOPE>All</SCOPE>
