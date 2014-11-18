@@ -25,6 +25,7 @@ public class Tester{
         d.Add(new Protein(4));
         d.Add(new Iron(  Researcher.dvGetGrams( new Iron(10) )));
         d.Add(new Iron(  Researcher.dvGetGrams( new Calcium(2) )));
+        d.Add(new Water ( 100 ));
 
         System.out.println(p.getName());
         for (Nutrient nutrient : d.nutrients){

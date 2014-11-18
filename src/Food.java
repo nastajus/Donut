@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public abstract class Food implements Cookable, Growable { // a discrete food item, orderable in a restaurant
     double cost; //optional to logic
     int kcal;
-    double weight;
+    double weight; //umm milligrams
     ArrayList<Nutrient> nutrients = new ArrayList<Nutrient>();
 
     boolean isCooked = false;
@@ -52,20 +52,29 @@ public abstract class Food implements Cookable, Growable { // a discrete food it
             boolean found = false;
             for( Nutrient nutrient : nutrients ){
                 System.out.println ("looking at : " +  nutrient.getName() );
-                if (nutrient.getName().equals( new Iron(0).getName() )){
+                if (nutrient.getName().equals( new Water(0).getName() )){
                     nutrient.milligrams *= nutrient.milligrams; //ridiculous placeholder test for Water to come next.
                     found = true;
-                    System.out.println("found Iron! multiplied!");
+                    System.out.println("found Water! multiplied!");
 
                     break;
                 }
             }
             if (!found){
-                nutrients.add( new Iron(10000));
-                System.out.println("not found.  added Iron to list.");
-                System.out.println(new Iron(0).getName());
+                nutrients.add( new Water(10000));
+                System.out.println("not found.  added Water to list.");
+                System.out.println(new Water(0).getName());
             }
         }
+    }
+
+    //Total for each nutrient
+    public double getWeight(){
+        weight = 0;
+        for( Nutrient nutrient : nutrients ){
+            weight += nutrient.milligrams;
+        }
+        return weight;
     }
 
 
