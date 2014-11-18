@@ -3,12 +3,14 @@ import java.util.ArrayList;
 /**
  * Created by IAN on 09/11/14.
  */
-public abstract class Food implements Cookable { // a discrete food item, orderable in a restaurant
+public abstract class Food implements Cookable, Growable { // a discrete food item, orderable in a restaurant
     double cost; //optional to logic
     int kcal;
+    double weight;
     ArrayList<Nutrient> nutrients = new ArrayList<Nutrient>();
 
     boolean isCooked = false;
+    boolean isGrown = false;
 
 
     Food(){}
@@ -39,6 +41,29 @@ public abstract class Food implements Cookable { // a discrete food item, ordera
                 System.out.print( nutrient.getName() + ":" + nutrient.milligrams );
                 nutrient.Cook();
                 System.out.println( ":" + nutrient.milligrams );
+            }
+        }
+    }
+
+    @Override
+    public void Grow() {
+        if (!isGrown){
+            isGrown = true;
+            boolean found = false;
+            for( Nutrient nutrient : nutrients ){
+                System.out.println ("looking at : " +  nutrient.getName() );
+                if (nutrient.getName().equals( new Iron(0).getName() )){
+                    nutrient.milligrams *= nutrient.milligrams; //ridiculous placeholder test for Water to come next.
+                    found = true;
+                    System.out.println("found Iron! multiplied!");
+
+                    break;
+                }
+            }
+            if (!found){
+                nutrients.add( new Iron(10000));
+                System.out.println("not found.  added Iron to list.");
+                System.out.println(new Iron(0).getName());
             }
         }
     }

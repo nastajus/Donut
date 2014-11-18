@@ -30,7 +30,10 @@ public class Tester{
         for (Nutrient nutrient : d.nutrients){
             System.out.println(nutrient.getName() + " : " + nutrient.milligrams);
         }
-         d.Cook();
+        d.Cook();
+
+
+        d.Grow();
 
 
 
