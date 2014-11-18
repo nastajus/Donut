@@ -34,7 +34,7 @@ public class Tester{
         d.Cook();
 
 
-        d.Grow();
+        Cantaloupe c = new Cantaloupe();
 
 
 

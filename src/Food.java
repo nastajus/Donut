@@ -4,6 +4,7 @@ import java.util.ArrayList;
  * Created by IAN on 09/11/14.
  */
 public abstract class Food implements Cookable { // a discrete food item, orderable in a restaurant
+
     double cost; //optional to logic
     int kcal;
     double weight; //umm milligrams
@@ -21,6 +22,29 @@ public abstract class Food implements Cookable { // a discrete food item, ordera
         }
         else {
             this.kcal = kcal;
+        }
+    }
+
+    Food(double weight){
+        if (weight < 0){
+            throw new IllegalStateException("Negative Weight not permitted");
+        }
+        else {
+            this.weight = weight;
+        }
+    }
+
+    Food(double weight, ArrayList<Nutrient> nutrients)
+    {
+        if (weight < 0){
+            throw new IllegalStateException("Negative Weight not permitted");
+        }
+        else {
+            this.weight = weight;
+        }
+
+        for (Nutrient nutrient : nutrients ){
+            nutrients.add(nutrient);
         }
     }
 
