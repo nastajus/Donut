@@ -17,31 +17,16 @@ public abstract class Food implements Cookable { // a discrete food item, ordera
     Food(){}
 
     Food(int kcal){
-        if (kcal < 0){
-            throw new IllegalStateException("Negative Calories not permitted");
-        }
-        else {
-            this.kcal = kcal;
-        }
+        if (kcal >= 0) this.kcal = kcal; else throw new IllegalStateException("Negative Calories not permitted");
     }
 
     Food(double weight){
-        if (weight < 0){
-            throw new IllegalStateException("Negative Weight not permitted");
-        }
-        else {
-            this.weight = weight;
-        }
+        if (weight >= 0) this.weight = weight; else throw new IllegalStateException("Negative Weight not permitted");
     }
 
     Food(double weight, ArrayList<Nutrient> nutrients)
     {
-        if (weight < 0){
-            throw new IllegalStateException("Negative Weight not permitted");
-        }
-        else {
-            this.weight = weight;
-        }
+        if (weight >= 0) this.weight = weight; else throw new IllegalStateException("Negative Weight not permitted");
 
         for (Nutrient nutrient : nutrients ){
             nutrients.add(nutrient);
