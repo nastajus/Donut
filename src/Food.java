@@ -3,7 +3,7 @@ import java.util.ArrayList;
 /**
  * Created by IAN on 09/11/14.
  */
-public abstract class Food implements Cookable, Growable { // a discrete food item, orderable in a restaurant
+public abstract class Food implements Cookable { // a discrete food item, orderable in a restaurant
     double cost; //optional to logic
     int kcal;
     double weight; //umm milligrams
@@ -45,28 +45,7 @@ public abstract class Food implements Cookable, Growable { // a discrete food it
         }
     }
 
-    @Override
-    public void Grow() {
-        if (!isGrown){
-            isGrown = true;
-            boolean found = false;
-            for( Nutrient nutrient : nutrients ){
-                System.out.println ("looking at : " +  nutrient.getName() );
-                if (nutrient.getName().equals( new Water(0).getName() )){
-                    nutrient.milligrams *= nutrient.milligrams; //ridiculous placeholder test for Water to come next.
-                    found = true;
-                    System.out.println("found Water! multiplied!");
 
-                    break;
-                }
-            }
-            if (!found){
-                nutrients.add( new Water(10000));
-                System.out.println("not found.  added Water to list.");
-                System.out.println(new Water(0).getName());
-            }
-        }
-    }
 
     //Total for each nutrient
     public double getWeight(){
