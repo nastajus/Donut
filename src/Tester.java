@@ -37,8 +37,8 @@ public class Tester{
 
 
         ArrayList<Nutrient> nutrients = new ArrayList<Nutrient>() {{
-             new Water(90);
-             new Potassium(100);
+             add ( new Water(90) );
+             add ( new Potassium(100) );
 //            { new Carbohydrate(8); }
 //            { new Fiber((int)0.9); }
 //            { new Protein((int)0.8); }
@@ -52,6 +52,10 @@ public class Tester{
 
         for (Nutrient nutrient : cantaloupe.nutrients ){
             System.out.println("PRINTING: " + nutrient);
+        }
+
+        for (Nutrient nutrient : nutrients ){
+            System.out.println("PRINTING: " + nutrient.getName());
         }
 
 
