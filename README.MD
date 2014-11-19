@@ -6,14 +6,17 @@ An ambitious project, which eventually is intended to provide a full gamut repre
 Another goal is to demonstrate mastery of Java object-oriented concepts, including inheritance, encapsulation, polymorphism. This to be demonstrated with `abstract  class`, `interface`, and so forth.  Named Donut in honor of the inspiring moment where I decided to track the absurdity of measuring objectively the health benefit of a series of sweet delicious foods. It's a temporary placeholder name.
 
 #### Status
-In progress. Majority of initial commits were just me making notes as i explored implementation details. The real implementation is beginning to be formed, it's barely an interface at the moment.
+Design in progress. No front end. Tester class contains logic for populating and triggering.
+
+#### Performance
+This concept clearly won't perform well with the millions of records that the USDA database provides, the memory footprint is too high to store every food item as an object. That data will go into database and be queried instead. A major refactoring stage would occur later, once familiarized with problem-domain.
 
 Current:
-![readme image][3]
+![readme image][1]
 
 Simpler:
-![readme image][1]
+![readme image][2]
 
   [1]: https://raw.githubusercontent.com/nastajus/Donut/master/diagram.png
   [2]: https://raw.githubusercontent.com/nastajus/Donut/master/diagram2.png
-  [3]: https://raw.githubusercontent.com/nastajus/Donut/master/diagram3.png
+  
